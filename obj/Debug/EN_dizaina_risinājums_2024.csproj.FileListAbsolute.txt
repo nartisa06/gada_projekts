@@ -1,0 +1,10 @@
+Z:\programmēšana 11.g\EN_dizaina_risinājums_2024\EN_dizaina_risinājums_2024\bin\Debug\EN_dizaina_risinājums_2024.exe.config
+Z:\programmēšana 11.g\EN_dizaina_risinājums_2024\EN_dizaina_risinājums_2024\bin\Debug\EN_dizaina_risinājums_2024.exe
+Z:\programmēšana 11.g\EN_dizaina_risinājums_2024\EN_dizaina_risinājums_2024\bin\Debug\EN_dizaina_risinājums_2024.pdb
+Z:\programmēšana 11.g\EN_dizaina_risinājums_2024\EN_dizaina_risinājums_2024\obj\Debug\EN_dizaina_risinājums_2024.csprojAssemblyReference.cache
+Z:\programmēšana 11.g\EN_dizaina_risinājums_2024\EN_dizaina_risinājums_2024\obj\Debug\EN_dizaina_risinājums_2024.Form1.resources
+Z:\programmēšana 11.g\EN_dizaina_risinājums_2024\EN_dizaina_risinājums_2024\obj\Debug\EN_dizaina_risinājums_2024.Properties.Resources.resources
+Z:\programmēšana 11.g\EN_dizaina_risinājums_2024\EN_dizaina_risinājums_2024\obj\Debug\EN_dizaina_risinājums_2024.csproj.GenerateResource.cache
+Z:\programmēšana 11.g\EN_dizaina_risinājums_2024\EN_dizaina_risinājums_2024\obj\Debug\EN_dizaina_risinājums_2024.csproj.CoreCompileInputs.cache
+Z:\programmēšana 11.g\EN_dizaina_risinājums_2024\EN_dizaina_risinājums_2024\obj\Debug\EN_dizaina_risinājums_2024.exe
+Z:\programmēšana 11.g\EN_dizaina_risinājums_2024\EN_dizaina_risinājums_2024\obj\Debug\EN_dizaina_risinājums_2024.pdb
