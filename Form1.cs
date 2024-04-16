@@ -45,7 +45,77 @@ namespace EN_dizaina_risinājums_2024
 
         private void button3_Click(object sender, EventArgs e)
         {
+            if (tb_autors.Text == "" || tb_autors.Text == " " || tb_autors.Text == null)
+            {
 
+                MessageBox.Show("Ievadiet ludzu frāmatas autoru");
+            }
+            if (tb_gramatas_nosaukums.Text == "" || tb_gramatas_nosaukums.Text == " " || tb_gramatas_nosaukums.Text == null)
+            {
+
+                MessageBox.Show("Ievadiet ludzu grāmatas nosaukumu");
+            }
+            if (rtb_apraksts.Text == "" || rtb_apraksts.Text == " " || rtb_apraksts.Text == null)
+            {
+
+                MessageBox.Show("Ievadiet ludzu grāmatas aprakstu");
+            }
+            if (rtb_ilustracijas.Text == "" || rtb_ilustracijas.Text == " "|| rtb_ilustracijas.Text == null)
+
+            {
+
+                MessageBox.Show("Ievadiet ludzu informāciju par grāmatas ilustrācijām");
+            }
+            if (rtb_patika.Text == "" || rtb_patika.Text == " " || rtb_patika.Text == null)
+            {
+
+                MessageBox.Show("Ievadiet ludzu kas Jums patika");
+            }
+            if (rtb_nepatika.Text == "" || rtb_nepatika.Text == " " || rtb_nepatika.Text == null)
+            {
+
+                MessageBox.Show("Ievadiet ludzu kas jums nepatika");
+            }
+            
+            SQLiteConnection sqlite_conn;
+            sqlite_conn = CreatConnection();
+
+            SQLiteCommand sqlite_cmd;
+            sqlite_cmd = sqlite_conn.CreateCommand();
+            sqlite_cmd.CommandText = "INSERT INTO dizaina_rizinajums(Gramatas_nosaukums, Gramatas_autors, apraksts, ilustacijas, nepatika, patika ) VALUES('" + tb_gramatas_nosaukums.Text + "','" + tb_autors.Text + "', '" + rtb_apraksts.Text + "','" + rtb_ilustracijas.Text + "','" + rtb_nepatika.Text + "','" + rtb_patika.Text +"');";
+            sqlite_cmd.ExecuteNonQuery();
+        }
+
+        private void b_Dzest_Click(object sender, EventArgs e)
+        {
+            {
+                SQLiteConnection sqlite_conn;
+                sqlite_conn = CreatConnection();
+
+                SQLiteCommand sqlite_cmd;
+                sqlite_cmd = sqlite_conn.CreateCommand();
+                sqlite_cmd.CommandText = "DELETE FROM dizaina_rizinajums WHERE ID=" + tb_dzest.Text + ";";
+                sqlite_cmd.ExecuteNonQuery();
+                tb_dzest.Clear();
+            }
+        }
+
+        private void b_tabula_Click(object sender, EventArgs e)
+        {
+            SQLiteConnection sqlite_conn;
+            sqlite_conn = CreatConnection();
+
+            SQLiteCommand sqlite_cmd;
+            sqlite_cmd = sqlite_conn.CreateCommand();
+            sqlite_cmd.CommandText = "SELECT * FROM dizaina_rizinajums";
+
+            DataTable sTable;
+            SQLiteDataAdapter sqlda = new SQLiteDataAdapter(sqlite_cmd);
+            using (sTable = new DataTable())
+            {
+                sqlda.Fill(sTable);
+                dgv_apskatit.DataSource = sTable;
+            }
         }
     }
 }

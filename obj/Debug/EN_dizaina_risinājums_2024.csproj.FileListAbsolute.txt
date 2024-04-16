@@ -8,3 +8,12 @@ Z:\programmēšana 11.g\EN_dizaina_risinājums_2024\EN_dizaina_risinājums_2024\
 Z:\programmēšana 11.g\EN_dizaina_risinājums_2024\EN_dizaina_risinājums_2024\obj\Debug\EN_dizaina_risinājums_2024.csproj.CoreCompileInputs.cache
 Z:\programmēšana 11.g\EN_dizaina_risinājums_2024\EN_dizaina_risinājums_2024\obj\Debug\EN_dizaina_risinājums_2024.exe
 Z:\programmēšana 11.g\EN_dizaina_risinājums_2024\EN_dizaina_risinājums_2024\obj\Debug\EN_dizaina_risinājums_2024.pdb
+Z:\programmēšana 11.g\EN_dizaina_risinājums_2024\EN_dizaina_risinājums_2024\bin\Debug\EntityFramework.dll
+Z:\programmēšana 11.g\EN_dizaina_risinājums_2024\EN_dizaina_risinājums_2024\bin\Debug\EntityFramework.SqlServer.dll
+Z:\programmēšana 11.g\EN_dizaina_risinājums_2024\EN_dizaina_risinājums_2024\bin\Debug\System.Data.SQLite.dll
+Z:\programmēšana 11.g\EN_dizaina_risinājums_2024\EN_dizaina_risinājums_2024\bin\Debug\System.Data.SQLite.EF6.dll
+Z:\programmēšana 11.g\EN_dizaina_risinājums_2024\EN_dizaina_risinājums_2024\bin\Debug\System.Data.SQLite.Linq.dll
+Z:\programmēšana 11.g\EN_dizaina_risinājums_2024\EN_dizaina_risinājums_2024\bin\Debug\EntityFramework.xml
+Z:\programmēšana 11.g\EN_dizaina_risinājums_2024\EN_dizaina_risinājums_2024\bin\Debug\EntityFramework.SqlServer.xml
+Z:\programmēšana 11.g\EN_dizaina_risinājums_2024\EN_dizaina_risinājums_2024\bin\Debug\System.Data.SQLite.xml
+Z:\programmēšana 11.g\EN_dizaina_risinājums_2024\EN_dizaina_risinājums_2024\obj\Debug\EN_dizaina_risinājums_2024.csproj.CopyComplete
