@@ -17,3 +17,5 @@ Z:\programmēšana 11.g\EN_dizaina_risinājums_2024\EN_dizaina_risinājums_2024\
 Z:\programmēšana 11.g\EN_dizaina_risinājums_2024\EN_dizaina_risinājums_2024\bin\Debug\EntityFramework.SqlServer.xml
 Z:\programmēšana 11.g\EN_dizaina_risinājums_2024\EN_dizaina_risinājums_2024\bin\Debug\System.Data.SQLite.xml
 Z:\programmēšana 11.g\EN_dizaina_risinājums_2024\EN_dizaina_risinājums_2024\obj\Debug\EN_dizaina_risinājums_2024.csproj.CopyComplete
+Z:\programmēšana 11.g\EN_dizaina_risinājums_2024\EN_dizaina_risinājums_2024\bin\Debug\Newtonsoft.Json.dll
+Z:\programmēšana 11.g\EN_dizaina_risinājums_2024\EN_dizaina_risinājums_2024\bin\Debug\Newtonsoft.Json.xml
