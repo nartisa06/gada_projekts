@@ -47,6 +47,9 @@
             this.rtb_nepatika = new System.Windows.Forms.RichTextBox();
             this.dgv_apskatit = new System.Windows.Forms.DataGridView();
             this.label8 = new System.Windows.Forms.Label();
+            this.rtb_zanri = new System.Windows.Forms.RichTextBox();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_apskatit)).BeginInit();
             this.SuspendLayout();
             // 
@@ -119,39 +122,44 @@
             // 
             // b_tabula
             // 
-            this.b_tabula.Location = new System.Drawing.Point(29, 427);
+            this.b_tabula.BackColor = System.Drawing.Color.White;
+            this.b_tabula.Font = new System.Drawing.Font("Georgia", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(186)));
+            this.b_tabula.Location = new System.Drawing.Point(25, 419);
             this.b_tabula.Name = "b_tabula";
-            this.b_tabula.Size = new System.Drawing.Size(164, 23);
+            this.b_tabula.Size = new System.Drawing.Size(168, 31);
             this.b_tabula.TabIndex = 7;
             this.b_tabula.Text = "Pārskatīt datus tabulā";
-            this.b_tabula.UseVisualStyleBackColor = true;
+            this.b_tabula.UseVisualStyleBackColor = false;
             this.b_tabula.Click += new System.EventHandler(this.b_tabula_Click);
             // 
             // tb_dzest
             // 
             this.tb_dzest.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(136)))), ((int)(((byte)(115)))));
-            this.tb_dzest.Location = new System.Drawing.Point(893, 416);
+            this.tb_dzest.Location = new System.Drawing.Point(894, 425);
             this.tb_dzest.Name = "tb_dzest";
             this.tb_dzest.Size = new System.Drawing.Size(100, 20);
             this.tb_dzest.TabIndex = 8;
             // 
             // b_Dzest
             // 
-            this.b_Dzest.Location = new System.Drawing.Point(708, 413);
+            this.b_Dzest.BackColor = System.Drawing.Color.White;
+            this.b_Dzest.Font = new System.Drawing.Font("Georgia", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(186)));
+            this.b_Dzest.Location = new System.Drawing.Point(724, 412);
             this.b_Dzest.Name = "b_Dzest";
-            this.b_Dzest.Size = new System.Drawing.Size(164, 23);
+            this.b_Dzest.Size = new System.Drawing.Size(164, 33);
             this.b_Dzest.TabIndex = 9;
             this.b_Dzest.Text = "Dzēst kādu no grāmatām";
-            this.b_Dzest.UseVisualStyleBackColor = true;
+            this.b_Dzest.UseVisualStyleBackColor = false;
             this.b_Dzest.Click += new System.EventHandler(this.b_Dzest_Click);
             // 
             // label4
             // 
             this.label4.AutoSize = true;
             this.label4.BackColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(999, 419);
+            this.label4.Font = new System.Drawing.Font("Georgia", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(186)));
+            this.label4.Location = new System.Drawing.Point(1000, 429);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(61, 13);
+            this.label4.Size = new System.Drawing.Size(84, 16);
             this.label4.TabIndex = 10;
             this.label4.Text = "(ID numurs)";
             // 
@@ -179,12 +187,14 @@
             // 
             // b_saglabat_db
             // 
-            this.b_saglabat_db.Location = new System.Drawing.Point(379, 342);
+            this.b_saglabat_db.BackColor = System.Drawing.Color.White;
+            this.b_saglabat_db.Font = new System.Drawing.Font("Georgia", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(186)));
+            this.b_saglabat_db.Location = new System.Drawing.Point(393, 331);
             this.b_saglabat_db.Name = "b_saglabat_db";
-            this.b_saglabat_db.Size = new System.Drawing.Size(289, 23);
+            this.b_saglabat_db.Size = new System.Drawing.Size(289, 34);
             this.b_saglabat_db.TabIndex = 15;
             this.b_saglabat_db.Text = "Saglabāt datus";
-            this.b_saglabat_db.UseVisualStyleBackColor = true;
+            this.b_saglabat_db.UseVisualStyleBackColor = false;
             this.b_saglabat_db.Click += new System.EventHandler(this.button3_Click);
             // 
             // tb_autors
@@ -252,12 +262,45 @@
             this.label8.TabIndex = 23;
             this.label8.Text = "Lasīto grāmatu dienasgrāmata";
             // 
+            // rtb_zanri
+            // 
+            this.rtb_zanri.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(163)))), ((int)(((byte)(119)))), ((int)(((byte)(116)))));
+            this.rtb_zanri.Location = new System.Drawing.Point(758, 58);
+            this.rtb_zanri.Name = "rtb_zanri";
+            this.rtb_zanri.Size = new System.Drawing.Size(220, 264);
+            this.rtb_zanri.TabIndex = 24;
+            this.rtb_zanri.Text = "";
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.BackColor = System.Drawing.Color.White;
+            this.label9.Font = new System.Drawing.Font("Georgia", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(186)));
+            this.label9.Location = new System.Drawing.Point(754, 9);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(224, 23);
+            this.label9.TabIndex = 25;
+            this.label9.Text = "Autora Populārākie žanri";
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.BackColor = System.Drawing.Color.White;
+            this.label10.Location = new System.Drawing.Point(755, 42);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(49, 13);
+            this.label10.TabIndex = 26;
+            this.label10.Text = "(Angliksi)";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(172)))), ((int)(((byte)(157)))));
             this.ClientSize = new System.Drawing.Size(1096, 714);
+            this.Controls.Add(this.label10);
+            this.Controls.Add(this.label9);
+            this.Controls.Add(this.rtb_zanri);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.dgv_apskatit);
             this.Controls.Add(this.rtb_nepatika);
@@ -306,6 +349,9 @@
         private System.Windows.Forms.RichTextBox rtb_nepatika;
         private System.Windows.Forms.DataGridView dgv_apskatit;
         private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.RichTextBox rtb_zanri;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label label10;
     }
 }
 

@@ -16,6 +16,7 @@ namespace EN_dizaina_risinājums_2024
 {
     public partial class Form1 : Form
     {
+        public string autors = "blablaa";
         public Form1()
         {
             InitializeComponent();
@@ -45,12 +46,13 @@ namespace EN_dizaina_risinājums_2024
             return sqlite_conn;
         }
 
-        private void button3_Click(object sender, EventArgs e)
+        private async void button3_Click(object sender, EventArgs e)
         {
+            autors = tb_autors.Text;
             if (tb_autors.Text == "" || tb_autors.Text == " " || tb_autors.Text == null)
             {
 
-                MessageBox.Show("Ievadiet ludzu frāmatas autoru");
+                MessageBox.Show("Ievadiet ludzu grāmatas autoru");
             }
             if (tb_gramatas_nosaukums.Text == "" || tb_gramatas_nosaukums.Text == " " || tb_gramatas_nosaukums.Text == null)
             {
@@ -86,6 +88,8 @@ namespace EN_dizaina_risinājums_2024
             sqlite_cmd = sqlite_conn.CreateCommand();
             sqlite_cmd.CommandText = "INSERT INTO dizaina_rizinajums(Gramatas_nosaukums, Gramatas_autors, apraksts, ilustacijas, nepatika, patika ) VALUES('" + tb_gramatas_nosaukums.Text + "','" + tb_autors.Text + "', '" + rtb_apraksts.Text + "','" + rtb_ilustracijas.Text + "','" + rtb_nepatika.Text + "','" + rtb_patika.Text + "');";
             sqlite_cmd.ExecuteNonQuery();
+
+           await AuthorizeAsync();
         }
 
         private void b_Dzest_Click(object sender, EventArgs e)
@@ -119,21 +123,22 @@ namespace EN_dizaina_risinājums_2024
                 dgv_apskatit.DataSource = sTable;
             }
         }
-        public static async Task Main(string[] args)
+        public async Task AuthorizeAsync()
         {
+         
+
             var Webklients = new HttpClient();
-            var atbilde = await Webklients.GetAsync("https://openlibrary.org/search/authors.json?q="(" + tb_autors + "));
+            var atbilde = await Webklients.GetAsync("https://openlibrary.org/search/authors.json?q=" + autors); // tb_autors.Text;
             if (atbilde.IsSuccessStatusCode)
             {
                 var AtbildesDati = await atbilde.Content.ReadAsStringAsync();
                 dynamic data = Newtonsoft.Json.JsonConvert.DeserializeObject(AtbildesDati);
-                
-                for (int i = 0; i < data.Count; i++)
-                {
-                    //Console.WriteLine(data[i].web_pages[0]);
-                    Console.WriteLine(data[i].name[0]);
 
-                }
+
+                rtb_zanri.Text = (data.docs[0].top_subjects);
+                //rtb_zanri.Text = (data[i].docs[0]);
+
+                
 
 
             }
